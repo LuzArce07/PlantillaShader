@@ -26,7 +26,7 @@ public:
 	void desenlazar();
 
 private:
-	GLuint shaderID;
+	GLuint shaderID; //aqui guardamos lo que el glCreateProgram regrese
 	void verificarCompilacion(GLuint id);
 	void verificarVinculacion(GLuint id);
 
