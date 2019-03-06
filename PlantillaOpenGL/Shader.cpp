@@ -114,14 +114,14 @@ void Shader::verificarCompilacion(GLuint id) {
 void Shader::verificarVinculacion(GLuint id) {
 	GLint estadoVinculacion, estadoValidacion;
 
-	glGetProgramiv(id, GL_LINK_STATUS, &estadoValidacion);
+	glGetProgramiv(id, GL_LINK_STATUS, &estadoVinculacion);
 	if (estadoVinculacion == GL_FALSE) {
 	
 		cout << "No se pudo vincular programa" << endl;
 
 	}
 
-	glGetProgramiv(id, GL_VALIDATE_STATUS);
+	glGetProgramiv(id, GL_VALIDATE_STATUS, &estadoValidacion);
 	if (estadoValidacion == GL_FALSE) {
 		
 		cout << "No se pudo validar la vinculacion" << endl;

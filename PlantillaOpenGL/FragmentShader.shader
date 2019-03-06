@@ -8,7 +8,7 @@ in vec4 fragmentColor;
 out vec4 salidaColor;
 
 //Funcion Main
-void main{
+void main(){
 	
 	salidaColor = fragmentColor;
 
